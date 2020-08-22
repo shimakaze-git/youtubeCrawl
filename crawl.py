@@ -22,7 +22,8 @@ def downloadVideo(url, title):
     VIDEO_DIR = os.path.join(os.getcwd(), 'videos')
     ydl_opts = {
         # 'format': 'best',
-        'format': 'bestvideo',
+        # 'format': 'bestvideo',
+        'format': '137[ext=mp4]',
         'outtmpl':  '{}/{}'.format(VIDEO_DIR, title) + '.%(ext)s',
         'progress_hooks': [my_hook],
         # 'logger': MyLogger(),
