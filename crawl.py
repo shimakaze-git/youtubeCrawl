@@ -23,7 +23,7 @@ def downloadVideo(url, title):
     ydl_opts = {
         # 'format': 'best',
         # 'format': 'bestvideo',
-        'format': '137[ext=mp4]',
+        'format': '313',
         'outtmpl':  '{}/{}'.format(VIDEO_DIR, title) + '.%(ext)s',
         'progress_hooks': [my_hook],
         # 'logger': MyLogger(),
